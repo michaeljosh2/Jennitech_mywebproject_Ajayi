@@ -1,0 +1,47 @@
+What is a Function?
+
+A function is a block of reusable code that performs a specific task.
+Instead of writing the same code multiple times, we wrap it in a function and call it whenever needed.
+
+Think of a function as a machine:
+	•	Input → Parameters
+	•	Process → Function Body
+	•	Output → Return value
+syntax of a function
+function functionName(parameters) {
+    // Code to execute
+    return value;  // optional
+}
+🔹 Why Use Functions?
+	Reusability → Write once, use many times.
+	Modularity → Break complex problems into smaller pieces.
+	Readability → Code becomes cleaner and more structured.
+	Maintainability → Easier to debug and update.
+	Avoid Repetition → Don’t repeat logic in multiple places.
+Types of Functions in JavaScript
+1. Named Function
+
+A simple function with a name.
+function greet() {
+    console.log("Hello, World!");
+}
+greet(); // Output: Hello, World!
+2. Function with Parameters
+
+Functions can accept inputs (parameters).
+function add(a, b) {
+    return a + b;
+}
+console.log(add(5, 3)); // Output: 8
+3. Arrow Function (ES6)
+
+Shorter syntax, useful for callbacks.
+const square = n => n * n;
+console.log(square(7)); // 49
+4. Rest Parameters
+
+Allow passing multiple arguments as an array.
+function sumAll(...numbers) {
+    return numbers.reduce((a, b) => a + b, 0);
+}
+console.log(sumAll(1, 2, 3, 4, 5)); // 15
