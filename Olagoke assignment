@@ -1,47 +1,91 @@
-What is a Function?
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Olagoke Assignment - JavaScript Functions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            font-family: Consolas, monospace;
+            color: #c0392b;
+        }
+        ul {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>What is a Function?</h1>
+    <p>A function is a block of reusable code that performs a specific task.  
+    Instead of writing the same code multiple times, we wrap it in a function and call it whenever needed.</p>
 
-A function is a block of reusable code that performs a specific task.
-Instead of writing the same code multiple times, we wrap it in a function and call it whenever needed.
+    <p>Think of a function as a machine:</p>
+    <ul>
+        <li><b>Input</b> → Parameters</li>
+        <li><b>Process</b> → Function Body</li>
+        <li><b>Output</b> → Return value</li>
+    </ul>
 
-Think of a function as a machine:
-	•	Input → Parameters
-	•	Process → Function Body
-	•	Output → Return value
-syntax of a function
+    <h2>Syntax of a function</h2>
+    <pre><code>
 function functionName(parameters) {
     // Code to execute
     return value;  // optional
 }
-🔹 Why Use Functions?
-	Reusability → Write once, use many times.
-	Modularity → Break complex problems into smaller pieces.
-	Readability → Code becomes cleaner and more structured.
-	Maintainability → Easier to debug and update.
-	Avoid Repetition → Don’t repeat logic in multiple places.
-Types of Functions in JavaScript
-1. Named Function
+    </code></pre>
 
-A simple function with a name.
+    <h2>🔹 Why Use Functions?</h2>
+    <ul>
+        <li>Reusability → Write once, use many times.</li>
+        <li>Modularity → Break complex problems into smaller pieces.</li>
+        <li>Readability → Code becomes cleaner and more structured.</li>
+        <li>Maintainability → Easier to debug and update.</li>
+        <li>Avoid Repetition → Don’t repeat logic in multiple places.</li>
+    </ul>
+
+    <h2>Types of Functions in JavaScript</h2>
+
+    <h3>1. Named Function</h3>
+    <pre><code>
 function greet() {
     console.log("Hello, World!");
 }
 greet(); // Output: Hello, World!
-2. Function with Parameters
+    </code></pre>
 
-Functions can accept inputs (parameters).
+    <h3>2. Function with Parameters</h3>
+    <pre><code>
 function add(a, b) {
     return a + b;
 }
 console.log(add(5, 3)); // Output: 8
-3. Arrow Function (ES6)
+    </code></pre>
 
-Shorter syntax, useful for callbacks.
+    <h3>3. Arrow Function (ES6)</h3>
+    <pre><code>
 const square = n => n * n;
 console.log(square(7)); // 49
-4. Rest Parameters
+    </code></pre>
 
-Allow passing multiple arguments as an array.
+    <h3>4. Rest Parameters</h3>
+    <pre><code>
 function sumAll(...numbers) {
     return numbers.reduce((a, b) => a + b, 0);
 }
 console.log(sumAll(1, 2, 3, 4, 5)); // 15
+    </code></pre>
+</body>
+</html>
