@@ -130,5 +130,66 @@ function multiplicationTable(n) {
 // Example usage:
 multiplicationTable(10);
     </code></pre>
+
+
+
+    <h2>2. Calculator (Arithmetic, Logical, and Comparison)</h2>
+    <label>Enter first number: </label>
+    <input type="number" id="num1">
+    <br><br>
+    <label>Enter second number: </label>
+    <input type="number" id="num2">
+    <br><br>
+    <button onclick="runCalculator()">Run Calculator</button>
+
+    <pre id="calcResult"></pre>
+
+    <h2>3. Multiplication Table</h2>
+    <label>Enter a number: </label>
+    <input type="number" id="tableNum">
+    <button onclick="generateTable()">Show Table</button>
+
+    <pre id="tableResult"></pre>
+
+    <script>
+        // Task 2: Calculator Function
+        function runCalculator() {
+            let a = parseFloat(document.getElementById("num1").value);
+            let b = parseFloat(document.getElementById("num2").value);
+            let output = "";
+
+            output += "Arithmetic Operations:\n";
+            output += "Addition: " + (a + b) + "\n";
+            output += "Subtraction: " + (a - b) + "\n";
+            output += "Multiplication: " + (a * b) + "\n";
+            output += "Division: " + (a / b) + "\n\n";
+
+            output += "Logical Operations:\n";
+            output += "AND (a>5 && b>5): " + (a > 5 && b > 5) + "\n";
+            output += "OR (a>5 || b>5): " + (a > 5 || b > 5) + "\n";
+            output += "NOT (!a): " + (!a) + "\n\n";
+
+            output += "Comparison Operations:\n";
+            output += "a == b: " + (a == b) + "\n";
+            output += "a === b: " + (a === b) + "\n";
+            output += "a != b: " + (a != b) + "\n";
+            output += "a > b: " + (a > b) + "\n";
+            output += "a < b: " + (a < b) + "\n";
+            output += "a >= b: " + (a >= b) + "\n";
+            output += "a <= b: " + (a <= b) + "\n";
+
+            document.getElementById("calcResult").textContent = output;
+        }
+
+        // Task 3: Multiplication Table Function (up to 10)
+        function generateTable() {
+            let num = parseInt(document.getElementById("tableNum").value);
+            let result = "Multiplication Table of " + num + ":\n";
+            for (let i = 1; i <= 10; i++) {
+                result += num + " x " + i + " = " + (num * i) + "\n";
+            }
+            document.getElementById("tableResult").textContent = result;
+        }
+    </script>
 </body>
 </html>
