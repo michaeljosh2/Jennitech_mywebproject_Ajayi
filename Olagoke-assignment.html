@@ -28,7 +28,7 @@
     </style>
 </head>
 <body>
-    <h1>What is a Function?</h1>
+    <h1>1. What is a Function?</h1>
     <p>A function is a block of reusable code that performs a specific task.  
     Instead of writing the same code multiple times, we wrap it in a function and call it whenever needed.</p>
 
@@ -86,6 +86,49 @@ function sumAll(...numbers) {
     return numbers.reduce((a, b) => a + b, 0);
 }
 console.log(sumAll(1, 2, 3, 4, 5)); // 15
+    </code></pre>
+
+
+
+    pre>
+
+    <!-- NEW SECTION -->
+    <h2>2. Calculator with Arithmetic, Logical and Comparison Operations</h2>
+    <p>Below is a simple calculator function in JavaScript:</p>
+    <pre><code>
+function calculator(a, b) {
+    console.log("Arithmetic Operations:");
+    console.log("Addition:", a + b);
+    console.log("Subtraction:", a - b);
+    console.log("Multiplication:", a * b);
+    console.log("Division:", a / b);
+
+    console.log("\nComparison Operations:");
+    console.log("a > b:", a > b);
+    console.log("a < b:", a < b);
+    console.log("a == b:", a == b);
+
+    console.log("\nLogical Operations:");
+    console.log("(a > 0 && b > 0):", (a > 0 && b > 0));
+    console.log("(a > 0 || b > 0):", (a > 0 || b > 0));
+    console.log("!(a > b):", !(a > b));
+}
+
+// Example usage:
+calculator(10, 5);
+    </code></pre>
+
+    <h2>3. Multiplication Table of 10</h2>
+    <p>Using JavaScript to generate multiplication table of 10:</p>
+    <pre><code>
+function multiplicationTable(n) {
+    for (let i = 1; i <= 12; i++) {
+        console.log(n + " x " + i + " = " + (n * i));
+    }
+}
+
+// Example usage:
+multiplicationTable(10);
     </code></pre>
 </body>
 </html>
